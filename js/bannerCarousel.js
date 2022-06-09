@@ -32,7 +32,7 @@ const bannerCarousel = ($bannerCarousel, items) => {
           지금 진행 중인 이벤트
     </h2>
         
-    <div class="carousel__button__controls">
+    <div class="banner__controls carousel__button__controls">
       <button type="button" class="banner__event__button carousel__list__button prev aria-controls="banner__carousel__list">
         <img class="banner__carousel__list-button carousel__list__button prev" src="/images/components/banner/white-arrow56.png" alt="이전 배너 보기" />
       </button>
@@ -44,7 +44,7 @@ const bannerCarousel = ($bannerCarousel, items) => {
       ${[items[items.length - 1], ...items, items[0], items[1]]
         .map(
           (item) => `
-          <article class="banner__event__tabpanel banner__carousel__item ${item.styleClass}" aria-label="${item.index}번째 배너"  role="group" aria-roledescription="slide">
+          <article class="banner__event__tabpanel banner__carousel__item ${item.styleClass}" aria-label="${item.index}번째 배너" role="group" aria-roledescription="slide">
             <a href="#" class="banner__event__link">
             <img src="${item.img}" alt="" />
             <p class="banner__event__text">${item.text}</p>
@@ -56,7 +56,7 @@ const bannerCarousel = ($bannerCarousel, items) => {
         )
         .join("")}
     </div>
-    <a href="#" type="button" class="banner__event__link__button carousel__currnet__badge aria-hidden="true"
+    <a href="#" type="button" class="banner__event__link__button carousel__currnet__badge aria-hidden="true" tabindex="-1"
     ><span class="banner__event__link__button__current carousel__currnet__badge__text"> </span
     >모두보기</a> 
 `;
@@ -94,8 +94,6 @@ const bannerCarousel = ($bannerCarousel, items) => {
     // Autoplay restart
     timerId = setInterval(() => move(++currentItem, DURATION), 5000);
   };
-
-  $bann;
 
   $bannerCarousel.ontransitionend = () => {
     isMoving = false;

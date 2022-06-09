@@ -20,7 +20,7 @@
     @include boxSize($w: 40%, $h: 12rem, $max-width: calc(40 / 100 * 1024px));
     border-radius: 1rem;
     background: $grayscaleSnow;
-    padding: 1rem;
+    padding: 1.5rem;
     margin: 0.5rem;
     position: relative;
   }

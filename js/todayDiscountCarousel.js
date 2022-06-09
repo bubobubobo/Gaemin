@@ -30,11 +30,19 @@ const todayDiscountCarousel = ($todayDiscountCarousel, items) => {
         오늘의 할인
       </h2>
       <a href="" class="main__section__link">전체보기</a>
-<div class="main__today__discount__list today__discount__carousel__list">
+      <div class="banner__controls carousel__button__controls">
+        <button class="today_discount__button carousel__list__button prev aria-controls="today__discount__carousel__list">
+          <img class="carousel__list-button carousel__list__button prev" src="/images/components/banner/white-arrow56.png" alt="이전 배너 보기" />
+        </button>
+        <button class="today_discount__button carousel__list__button next aria-controls="today__discount__carousel__list">
+          <img class="carousel__list-button carousel__list__button" src="/images/components/banner/white-arrow56.png" alt="다음 배너 보기" />
+        </button>
+      </div>
+<div class="main__today__discount__list today__discount__carousel__list" id="today__discount__carousel__list">
   ${[items[items.length - 1], ...items, items[0], items[1], items[2]]
     .map(
       (item) => `
-      <article class="main__today__discount__item today__discount__carousel__item ${item.styleClass}" role="tabpanel" aria-label="${item.index}번째 배너">
+      <article class="main__today__discount__item today__discount__carousel__item ${item.styleClass}" role="group" aria-roledescription="slide" aria-label="${item.index}번째 배너">
         <a href="#" class="main__today__discount__link">
         <img
               src="${item.logo}"
@@ -54,13 +62,8 @@ const todayDiscountCarousel = ($todayDiscountCarousel, items) => {
     )
     .join("")}
 </div>
-<button class="today_discount__button carousel__list__button prev ">
-  <img class="carousel__list-button carousel__list__button prev" src="/images/components/banner/white-arrow56.png" alt="이전 배너 보기 버튼" />
-</button>
-<button class="today_discount__button carousel__list__button next">
-  <img class="carousel__list-button carousel__list__button" src="/images/components/banner/white-arrow56.png" alt="다음 배너 보기 버튼" />
-</button>
-<a href="#" type="button" class="today_discount__link__button carousel__currnet__badge"
+
+<a href="#" type="button" class="today_discount__link__button carousel__currnet__badge" aria-hidden="true" tabindex="-1"
   ><span class="today_discount__link__button__current carousel__currnet__badge__text"> </span
   >모두보기</a> 
 `;
