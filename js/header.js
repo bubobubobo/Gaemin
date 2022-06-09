@@ -6,12 +6,13 @@ const header = () => {
   let my_place_li = document.querySelectorAll('.my__place__ul li');
   let local_count_group = document.querySelector('.local__count__group');
   let local_count = document.querySelector('.local__count');
+  let my_place_head = document.querySelector('.my__place h2');
   
   const modalHandler = () => {
     modal.style.display = 'block';
     modal_body.classList.add('on');
     body.style.overflow = 'hidden';
-    my_place_li[0].focus();
+    my_place_head.focus();
   };
   
   const modalOff = (e) => {
@@ -38,6 +39,8 @@ const header = () => {
       local_count_group.style.display = 'inline-block';
     }      
   });
+  my_place_li[my_place_li.length - 1].firstChild.addEventListener('keyup', (e) => e.keyCode === 9 && my_place_li[0].focus());
 };
+
 
 export default header;

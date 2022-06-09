@@ -54,7 +54,7 @@
     }
     // min-width: rem(500px);
     @include autoMargin;
-    background: url("../../images/delivery-main/background_receipt.jpeg");
+    background: url("./../images/delivery-main/background_receipt.jpeg");
     // overflow: hidden;
 
     .payed {
@@ -80,7 +80,7 @@
       position: absolute;
       top: rem(10px);
       right: rem(10px);
-      background: url("../../images/cart/exit.png") no-repeat;
+      background: url("./../images/cart/exit.png") no-repeat;
       background-position: 50%;
     }
 
@@ -91,7 +91,7 @@
       position: absolute;
       top: rem(10px);
       right: rem(40px);
-      background: url("../../images/cart/home.png") no-repeat;
+      background: url("./../images/cart/home.png") no-repeat;
       background-position: 50%;
     }
   }

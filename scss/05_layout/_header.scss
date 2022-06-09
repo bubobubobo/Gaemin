@@ -52,7 +52,7 @@
     width: rem(30px);
     height: rem(30px);
     display: inline-block;
-    background-image: url(../../images/components/header/serach-green48.png);
+    background-image: url(./../images/components/header/serach-green48.png);
     background-position: 0 0;
     background-size: contain;
     position: absolute;
@@ -69,7 +69,7 @@
     width: 20px;
     height: 20px;
     margin-left: 15px;
-    background-image: url(../../images/components/header/ZtF.png);
+    background-image: url(./../images/components/header/ZtF.png);
     background-position: 0 0;
     background-size: contain;
     background-repeat: no-repeat;
@@ -139,6 +139,10 @@
   text-align: center;
   line-height: rem(20px);
   display: none;
+}
+
+.my__place h2 {
+  outline: 0;
 }
 
 .cart__img {

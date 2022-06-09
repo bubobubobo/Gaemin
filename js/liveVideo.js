@@ -135,11 +135,11 @@
     let video_cur = Math.round(video.currentTime);
     if (e.target.className.includes("forward")) {
       if (video_cur > 5 || video_cur < video_du) {
-        video.currentTime -= 5;
+        video.currentTime -= 3;
       }
     } else {
       if (video_cur > 0 || video_cur < video_du - 5) {
-        video.currentTime += 5;
+        video.currentTime += 3;
       }
     }
 

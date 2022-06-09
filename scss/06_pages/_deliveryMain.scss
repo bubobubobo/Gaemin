@@ -82,7 +82,7 @@ $images: (
           position: absolute;
           top: 0;
           left: 0;
-          background: url("../images/delivery-main/#{$glyph}") no-repeat;
+          background: url("./../images/delivery-main/#{$glyph}") no-repeat;
           background-size: 55%;
           background-position: 50%;
         }

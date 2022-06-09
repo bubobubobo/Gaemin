@@ -2,7 +2,7 @@
   width: rem(50px);
   height: rem(50px);
   @include buttonNone;
-  background-image: url(../../images/components/moveToTop/up60.png);
+  background-image: url(./../images/components/moveToTop/up60.png);
   background-position: 0 0;
   background-size: contain;
   background-repeat: no-repeat;
@@ -12,5 +12,5 @@
 }
 
 .top__btn.is-active {
-  background-image: url(../../images/components/moveToTop/up-aqua60.png);
+  background-image: url(./../images/components/moveToTop/up-aqua60.png);
 }

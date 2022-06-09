@@ -9,6 +9,98 @@
   margin: -1px;
 }
 
+@-webkit-keyframes rotate-loading {
+  0% {
+    transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+  }
+}
+@keyframes rotate-loading {
+  0% {
+    transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rotate-loading {
+  0% {
+    transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+  }
+}
+@keyframes rotate-loading {
+  0% {
+    transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes loading-text-opacity {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes loading-text-opacity {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 html {
   line-height: 1.15;
@@ -423,7 +515,7 @@ button {
  */
 @keyframes blinker {
   50% {
-    background-color: #d1d1d1;
+    background-color: rgb(209, 209, 209);
   }
 }
 .blink_me {
@@ -574,7 +666,7 @@ button {
 .main__today__discount__title::after {
   content: "";
   display: inline-block;
-  background: #fff url("/images/main/icon_discout.png") no-repeat 0 0;
+  background: #fff url("./../images/main/icon_discout.png") no-repeat 0 0;
   background-size: cover;
   width: 1.5rem;
   height: 1.5rem;
@@ -712,7 +804,7 @@ button {
   display: inline-block;
   position: relative;
   margin-top: 0.5rem;
-  border: 1px solid #2ac1bc;
+  border: 1px solid rgb(42, 193, 188);
   border-radius: 1.5rem;
   background: #f0faf9;
   padding-top: 0.375rem;
@@ -728,7 +820,7 @@ button {
   display: inline-block;
   width: 1.25rem;
   height: 1.375rem;
-  background: url("../../images/components/restaurantCard/no1-24.png");
+  background: url("./../images/components/restaurantCard/no1-24.png");
   background-repeat: no-repeat;
   background-size: cover;
   text-indent: 99rem;
@@ -773,16 +865,16 @@ button {
   display: block;
 }
 .live__special__items:nth-child(2) .live__special__coupon::before, .live__special__items:nth-child(7) .live__special__coupon::before {
-  background-image: url(../../images/components/liveShoppingCard/burgerking-logo.png);
+  background-image: url(./../images/components/liveShoppingCard/burgerking-logo.png);
 }
 .live__special__items:nth-child(3) .live__special__coupon::before, .live__special__items:nth-child(8) .live__special__coupon::before {
-  background-image: url(../../images/main/meat.jpg);
+  background-image: url(./../images/main/meat.jpg);
 }
 .live__special__items:nth-child(4) .live__special__coupon::before, .live__special__items:nth-child(9) .live__special__coupon::before {
-  background-image: url(../../images/components/liveShoppingCard/paris-logo.png);
+  background-image: url(./../images/components/liveShoppingCard/paris-logo.png);
 }
 .live__special__items:nth-child(5) .live__special__coupon::before, .live__special__items:nth-child(10) .live__special__coupon::before {
-  background-image: url(../../images/components/liveShoppingCard/baskin-logo.jpg);
+  background-image: url(./../images/components/liveShoppingCard/baskin-logo.jpg);
 }
 .live__special__video {
   position: relative;
@@ -845,7 +937,7 @@ button {
   position: absolute;
   left: 10px;
   top: 10px;
-  background: rgba(0, 0, 0, 0.3) url(../../images/components/liveShoppingCard/icon-person.png) no-repeat;
+  background: rgba(0, 0, 0, 0.3) url(./../images/components/liveShoppingCard/icon-person.png) no-repeat;
   background-size: 14px;
   background-position: 6px center;
   border-radius: 6px;
@@ -866,7 +958,7 @@ button {
   width: 70px;
   height: 70px;
   border-radius: 5px;
-  background: url(../../images/components/liveShoppingCard/pizza-logo.png) no-repeat;
+  background: url(./../images/components/liveShoppingCard/pizza-logo.png) no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -944,20 +1036,20 @@ button {
   border: 2px solid #2ac1bc;
 }
 .order__detail__radio--group > li.on label {
-  background-image: url(../../images/order-detail/icon-radio-checked.png);
+  background-image: url(./../images/order-detail/icon-radio-checked.png);
 }
 .order__detail__radio--group label {
-  background: url(../../images/order-detail/icon-radio-unchecked.png) no-repeat;
+  background: url(./../images/order-detail/icon-radio-unchecked.png) no-repeat;
   background-size: contain;
 }
 .order__detail__radio--group input {
   border-radius: 50%;
 }
 .order__detail__chk--group > li.on label {
-  background-image: url(../../images/order-detail/icon-chk-checked.png);
+  background-image: url(./../images/order-detail/icon-chk-checked.png);
 }
 .order__detail__chk--group label {
-  background: url(../../images/order-detail/icon-chk-unchecked.png) no-repeat;
+  background: url(./../images/order-detail/icon-chk-unchecked.png) no-repeat;
   background-size: contain;
 }
 .order__detail__chk--group input {
@@ -1020,7 +1112,7 @@ button {
 }
 .bill.off .empty {
   padding-top: 200px;
-  background: url(../../images/order-detail/icon-empty.png) no-repeat;
+  background: url(./../images/order-detail/icon-empty.png) no-repeat;
   background-position: center;
 }
 .bill.off button {
@@ -1200,7 +1292,7 @@ button {
   border: 0;
   padding: 0;
   background: none;
-  background-image: url(../../images/components/moveToTop/up60.png);
+  background-image: url(./../images/components/moveToTop/up60.png);
   background-position: 0 0;
   background-size: contain;
   background-repeat: no-repeat;
@@ -1210,13 +1302,13 @@ button {
 }
 
 .top__btn.is-active {
-  background-image: url(../../images/components/moveToTop/up-aqua60.png);
+  background-image: url(./../images/components/moveToTop/up-aqua60.png);
 }
 
 .header {
   width: 100%;
   height: 10.0625rem;
-  background-color: #2ac1bc;
+  background-color: rgb(42, 193, 188);
   border-radius: 0 0 15px 15px;
   position: fixed;
   top: 0;
@@ -1285,7 +1377,7 @@ button {
   width: 1.875rem;
   height: 1.875rem;
   display: inline-block;
-  background-image: url(../../images/components/header/serach-green48.png);
+  background-image: url(./../images/components/header/serach-green48.png);
   background-position: 0 0;
   background-size: contain;
   position: absolute;
@@ -1305,7 +1397,7 @@ button {
   width: 20px;
   height: 20px;
   margin-left: 15px;
-  background-image: url(../../images/components/header/ZtF.png);
+  background-image: url(./../images/components/header/ZtF.png);
   background-position: 0 0;
   background-size: contain;
   background-repeat: no-repeat;
@@ -1373,10 +1465,14 @@ button {
   background-color: #fff;
   width: 1.25rem;
   height: 1.25rem;
-  color: #2ac1bc;
+  color: rgb(42, 193, 188);
   text-align: center;
   line-height: 1.25rem;
   display: none;
+}
+
+.my__place h2 {
+  outline: 0;
 }
 
 .cart__img {
@@ -1438,11 +1534,11 @@ button {
   background-position: 0 3px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url(../../images/components/footer/down42.png);
+  background-image: url(./../images/components/footer/down42.png);
 }
 
 .company__toggle__up::after {
-  background-image: url(../../images/components/footer/up42.png);
+  background-image: url(./../images/components/footer/up42.png);
 }
 
 .company__detail {
@@ -1705,19 +1801,19 @@ button {
 }
 
 .card__darkgreen {
-  background: #095536;
+  background: rgb(9, 85, 54);
 }
 .card__orange {
-  background: #ff8f2b;
+  background: rgb(255, 143, 43);
 }
 .card__pink {
-  background: #fb7397;
+  background: rgb(251, 115, 151);
 }
 .card__green {
-  background: #80d86b;
+  background: rgb(128, 216, 107);
 }
 .card__olive {
-  background: #9bab62;
+  background: rgb(155, 171, 98);
 }
 
 .banner__event__button:nth-of-type(1) img,
@@ -1805,7 +1901,7 @@ button {
   position: absolute;
   top: 0;
   left: 0;
-  background: url("../images/delivery-main/sushi200.png") no-repeat;
+  background: url("./../images/delivery-main/sushi200.png") no-repeat;
   background-size: 55%;
   background-position: 50%;
 }
@@ -1816,7 +1912,7 @@ button {
   position: absolute;
   top: 0;
   left: 0;
-  background: url("../images/delivery-main/jajangmyeon200.png") no-repeat;
+  background: url("./../images/delivery-main/jajangmyeon200.png") no-repeat;
   background-size: 55%;
   background-position: 50%;
 }
@@ -1827,7 +1923,7 @@ button {
   position: absolute;
   top: 0;
   left: 0;
-  background: url("../images/delivery-main/chicken200.png") no-repeat;
+  background: url("./../images/delivery-main/chicken200.png") no-repeat;
   background-size: 55%;
   background-position: 50%;
 }
@@ -1838,7 +1934,7 @@ button {
   position: absolute;
   top: 0;
   left: 0;
-  background: url("../images/delivery-main/rice168.png") no-repeat;
+  background: url("./../images/delivery-main/rice168.png") no-repeat;
   background-size: 55%;
   background-position: 50%;
 }
@@ -1849,7 +1945,7 @@ button {
   position: absolute;
   top: 0;
   left: 0;
-  background: url("../images/delivery-main/cafe150.png") no-repeat;
+  background: url("./../images/delivery-main/cafe150.png") no-repeat;
   background-size: 55%;
   background-position: 50%;
 }
@@ -1860,7 +1956,7 @@ button {
   position: absolute;
   top: 0;
   left: 0;
-  background: url("../images/delivery-main/bunsik200.png") no-repeat;
+  background: url("./../images/delivery-main/bunsik200.png") no-repeat;
   background-size: 55%;
   background-position: 50%;
 }
@@ -1871,7 +1967,7 @@ button {
   position: absolute;
   top: 0;
   left: 0;
-  background: url("../images/delivery-main/jjigae150.png") no-repeat;
+  background: url("./../images/delivery-main/jjigae150.png") no-repeat;
   background-size: 55%;
   background-position: 50%;
 }
@@ -1882,7 +1978,7 @@ button {
   position: absolute;
   top: 0;
   left: 0;
-  background: url("../images/delivery-main/pizza150.png") no-repeat;
+  background: url("./../images/delivery-main/pizza150.png") no-repeat;
   background-size: 55%;
   background-position: 50%;
 }
@@ -1893,7 +1989,7 @@ button {
   position: absolute;
   top: 0;
   left: 0;
-  background: url("../images/delivery-main/spagetti126.png") no-repeat;
+  background: url("./../images/delivery-main/spagetti126.png") no-repeat;
   background-size: 55%;
   background-position: 50%;
 }
@@ -1904,7 +2000,7 @@ button {
   position: absolute;
   top: 0;
   left: 0;
-  background: url("../images/delivery-main/sam168.png") no-repeat;
+  background: url("./../images/delivery-main/sam168.png") no-repeat;
   background-size: 55%;
   background-position: 50%;
 }
@@ -1915,7 +2011,7 @@ button {
   position: absolute;
   top: 0;
   left: 0;
-  background: url("../images/delivery-main/jok150.png") no-repeat;
+  background: url("./../images/delivery-main/jok150.png") no-repeat;
   background-size: 55%;
   background-position: 50%;
 }
@@ -1926,7 +2022,7 @@ button {
   position: absolute;
   top: 0;
   left: 0;
-  background: url("../images/delivery-main/asian168.png") no-repeat;
+  background: url("./../images/delivery-main/asian168.png") no-repeat;
   background-size: 55%;
   background-position: 50%;
 }
@@ -1937,7 +2033,7 @@ button {
   position: absolute;
   top: 0;
   left: 0;
-  background: url("../images/delivery-main/burger200.png") no-repeat;
+  background: url("./../images/delivery-main/burger200.png") no-repeat;
   background-size: 55%;
   background-position: 50%;
 }
@@ -1948,7 +2044,7 @@ button {
   position: absolute;
   top: 0;
   left: 0;
-  background: url("../images/delivery-main/yasik150.png") no-repeat;
+  background: url("./../images/delivery-main/yasik150.png") no-repeat;
   background-size: 55%;
   background-position: 50%;
 }
@@ -1959,7 +2055,7 @@ button {
   position: absolute;
   top: 0;
   left: 0;
-  background: url("../images/delivery-main/lunchbox200.png") no-repeat;
+  background: url("./../images/delivery-main/lunchbox200.png") no-repeat;
   background-size: 55%;
   background-position: 50%;
 }
@@ -1970,7 +2066,7 @@ button {
   position: absolute;
   top: 0;
   left: 0;
-  background: url("../images/delivery-main/salad200.png") no-repeat;
+  background: url("./../images/delivery-main/salad200.png") no-repeat;
   background-size: 55%;
   background-position: 50%;
 }
@@ -1981,7 +2077,7 @@ button {
   position: absolute;
   top: 0;
   left: 0;
-  background: url("../images/delivery-main/soup200.png") no-repeat;
+  background: url("./../images/delivery-main/soup200.png") no-repeat;
   background-size: 55%;
   background-position: 50%;
 }
@@ -1992,7 +2088,7 @@ button {
   position: absolute;
   top: 0;
   left: 0;
-  background: url("../images/delivery-main/dairy200.png") no-repeat;
+  background: url("./../images/delivery-main/dairy200.png") no-repeat;
   background-size: 55%;
   background-position: 50%;
 }
@@ -2128,7 +2224,7 @@ button {
   display: inline-block;
   position: relative;
   margin-top: 0.5rem;
-  border: 1px solid #2ac1bc;
+  border: 1px solid rgb(42, 193, 188);
   border-radius: 1.5rem;
   background: #f0faf9;
   padding-top: 0.375rem;
@@ -2226,7 +2322,7 @@ h3 {
   cursor: pointer;
 }
 .pickUp-tab #tab3 {
-  background-image: url(./../../images/map/star.png);
+  background-image: url(./../images/map/star.png);
   background-repeat: no-repeat;
   background-size: 30%;
   background-position: 5% 37%;
@@ -2248,7 +2344,7 @@ h3 {
   display: inline-block;
   height: 20px;
   width: 30px;
-  background-image: url(./../../images/map/EAL.png);
+  background-image: url(./../images/map/EAL.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -2303,7 +2399,7 @@ h3 {
 }
 .pickUp-tab__contents section:nth-of-type(3) p {
   margin: 12px 24px;
-  background-image: url(./../../images/map/kRf.png);
+  background-image: url(./../images/map/kRf.png);
   background-size: contain;
   background-repeat: no-repeat;
   color: #c2a681;
@@ -2416,7 +2512,7 @@ h3 {
   height: 5.625rem;
   margin-top: -5px;
   width: 80%;
-  border-radius: 5%;
+  border-radius: 10px;
 }
 .pickup-mapinfo__search .pickup-cardlist .loading-button {
   margin-left: 7px;
@@ -2461,7 +2557,7 @@ h3 {
   width: 1.875rem;
   height: 1.875rem;
   display: block;
-  background-image: url(./../../images/map/AsG.png);
+  background-image: url(./../images/map/AsG.png);
   background-size: contain;
 }
 
@@ -2529,7 +2625,7 @@ h3 {
   width: 3.75rem;
   height: 2.5rem;
   display: block;
-  background: url("../images/delivery-main/sushi200.png") no-repeat;
+  background: url("./../images/delivery-main/sushi200.png") no-repeat;
   background-size: contain;
   position: relative;
   transform: translateX(15%);
@@ -2539,7 +2635,7 @@ h3 {
   width: 3.75rem;
   height: 2.5rem;
   display: block;
-  background: url("../images/delivery-main/jajangmyeon200.png") no-repeat;
+  background: url("./../images/delivery-main/jajangmyeon200.png") no-repeat;
   background-size: contain;
   position: relative;
   transform: translateX(15%);
@@ -2549,7 +2645,7 @@ h3 {
   width: 3.75rem;
   height: 2.5rem;
   display: block;
-  background: url("../images/delivery-main/chicken200.png") no-repeat;
+  background: url("./../images/delivery-main/chicken200.png") no-repeat;
   background-size: contain;
   position: relative;
   transform: translateX(15%);
@@ -2559,7 +2655,7 @@ h3 {
   width: 3.75rem;
   height: 2.5rem;
   display: block;
-  background: url("../images/delivery-main/rice168.png") no-repeat;
+  background: url("./../images/delivery-main/rice168.png") no-repeat;
   background-size: contain;
   position: relative;
   transform: translateX(15%);
@@ -2569,7 +2665,7 @@ h3 {
   width: 3.75rem;
   height: 2.5rem;
   display: block;
-  background: url("../images/delivery-main/cafe150.png") no-repeat;
+  background: url("./../images/delivery-main/cafe150.png") no-repeat;
   background-size: contain;
   position: relative;
   transform: translateX(15%);
@@ -2579,7 +2675,7 @@ h3 {
   width: 3.75rem;
   height: 2.5rem;
   display: block;
-  background: url("../images/delivery-main/bunsik200.png") no-repeat;
+  background: url("./../images/delivery-main/bunsik200.png") no-repeat;
   background-size: contain;
   position: relative;
   transform: translateX(15%);
@@ -2589,7 +2685,7 @@ h3 {
   width: 3.75rem;
   height: 2.5rem;
   display: block;
-  background: url("../images/delivery-main/jjigae150.png") no-repeat;
+  background: url("./../images/delivery-main/jjigae150.png") no-repeat;
   background-size: contain;
   position: relative;
   transform: translateX(15%);
@@ -2599,7 +2695,7 @@ h3 {
   width: 3.75rem;
   height: 2.5rem;
   display: block;
-  background: url("../images/delivery-main/pizza150.png") no-repeat;
+  background: url("./../images/delivery-main/pizza150.png") no-repeat;
   background-size: contain;
   position: relative;
   transform: translateX(15%);
@@ -2609,7 +2705,7 @@ h3 {
   width: 3.75rem;
   height: 2.5rem;
   display: block;
-  background: url("../images/delivery-main/spagetti126.png") no-repeat;
+  background: url("./../images/delivery-main/spagetti126.png") no-repeat;
   background-size: contain;
   position: relative;
   transform: translateX(15%);
@@ -2619,7 +2715,7 @@ h3 {
   width: 3.75rem;
   height: 2.5rem;
   display: block;
-  background: url("../images/delivery-main/sam168.png") no-repeat;
+  background: url("./../images/delivery-main/sam168.png") no-repeat;
   background-size: contain;
   position: relative;
   transform: translateX(15%);
@@ -2629,7 +2725,7 @@ h3 {
   width: 3.75rem;
   height: 2.5rem;
   display: block;
-  background: url("../images/delivery-main/jok150.png") no-repeat;
+  background: url("./../images/delivery-main/jok150.png") no-repeat;
   background-size: contain;
   position: relative;
   transform: translateX(15%);
@@ -2639,7 +2735,7 @@ h3 {
   width: 3.75rem;
   height: 2.5rem;
   display: block;
-  background: url("../images/delivery-main/asian168.png") no-repeat;
+  background: url("./../images/delivery-main/asian168.png") no-repeat;
   background-size: contain;
   position: relative;
   transform: translateX(15%);
@@ -2649,7 +2745,7 @@ h3 {
   width: 3.75rem;
   height: 2.5rem;
   display: block;
-  background: url("../images/delivery-main/burger200.png") no-repeat;
+  background: url("./../images/delivery-main/burger200.png") no-repeat;
   background-size: contain;
   position: relative;
   transform: translateX(15%);
@@ -2659,7 +2755,7 @@ h3 {
   width: 3.75rem;
   height: 2.5rem;
   display: block;
-  background: url("../images/delivery-main/yasik150.png") no-repeat;
+  background: url("./../images/delivery-main/yasik150.png") no-repeat;
   background-size: contain;
   position: relative;
   transform: translateX(15%);
@@ -2669,7 +2765,7 @@ h3 {
   width: 3.75rem;
   height: 2.5rem;
   display: block;
-  background: url("../images/delivery-main/lunchbox200.png") no-repeat;
+  background: url("./../images/delivery-main/lunchbox200.png") no-repeat;
   background-size: contain;
   position: relative;
   transform: translateX(15%);
@@ -2679,7 +2775,7 @@ h3 {
   width: 3.75rem;
   height: 2.5rem;
   display: block;
-  background: url("../images/delivery-main/salad200.png") no-repeat;
+  background: url("./../images/delivery-main/salad200.png") no-repeat;
   background-size: contain;
   position: relative;
   transform: translateX(15%);
@@ -2689,7 +2785,7 @@ h3 {
   width: 3.75rem;
   height: 2.5rem;
   display: block;
-  background: url("../images/delivery-main/soup200.png") no-repeat;
+  background: url("./../images/delivery-main/soup200.png") no-repeat;
   background-size: contain;
   position: relative;
   transform: translateX(15%);
@@ -2699,7 +2795,7 @@ h3 {
   width: 3.75rem;
   height: 2.5rem;
   display: block;
-  background: url("../images/delivery-main/dairy200.png") no-repeat;
+  background: url("./../images/delivery-main/dairy200.png") no-repeat;
   background-size: contain;
   position: relative;
   transform: translateX(15%);
@@ -2797,7 +2893,7 @@ h3 {
 }
 
 .live__banner__inner {
-  background: url(../../images/components/liveShoppingCard/shoppinglive486.png) no-repeat;
+  background: url(./../images/components/liveShoppingCard/shoppinglive486.png) no-repeat;
 }
 @media screen and (max-width: 1023px) {
   .live__banner__inner {
@@ -2940,12 +3036,12 @@ h3 {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
-  color: #2ac1bc;
+  color: rgb(42, 193, 188);
   padding-top: 0.375rem;
   padding-bottom: 0.375rem;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
-  border: 1px solid #2ac1bc;
+  border: 1px solid rgb(42, 193, 188);
   border-radius: 20px;
   margin-left: 184px;
 }
@@ -2959,6 +3055,60 @@ h3 {
 .live__video__wrapper.loading .live__video__inner header, .live__video__wrapper.loading .live__video__inner .live__video__container {
   opacity: 0;
 }
+.live__video__wrapper.loading .live__video__inner .loading__container {
+  display: block;
+}
+.live__video__wrapper .loading__container {
+  display: none;
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.live__video__wrapper .loading__container .loading {
+  border-radius: 100%;
+  border: 2px solid #fff;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  background: transparent;
+  -moz-animation: rotate-loading 1.5s linear 0s infinite normal;
+  -moz-transform-origin: 50% 50%;
+  -o-animation: rotate-loading 1.5s linear 0s infinite normal;
+  -o-transform-origin: 50% 50%;
+  -webkit-animation: rotate-loading 1.5s linear 0s infinite normal;
+  -webkit-transform-origin: 50% 50%;
+  animation: rotate-loading 1.5s linear 0s infinite normal;
+  transform-origin: 50% 50%;
+}
+.live__video__wrapper .loading__container:hover .loading {
+  border-color: transparent #E45635 transparent #E45635;
+}
+.live__video__wrapper .loading__container:hover .loading, .live__video__wrapper .loading__container .loading {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.live__video__wrapper .loading__container #loading-text {
+  -moz-animation: loading-text-opacity 2s linear 0s infinite normal;
+  -o-animation: loading-text-opacity 2s linear 0s infinite normal;
+  -webkit-animation: loading-text-opacity 2s linear 0s infinite normal;
+  animation: loading-text-opacity 2s linear 0s infinite normal;
+  color: #ffffff;
+  font-family: "Helvetica Neue, " Helvetica ", " "arial";
+  font-size: 10px;
+  font-weight: bold;
+  margin-top: 45px;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  top: 0;
+  width: 100px;
+}
 .live__video__wrapper header, .live__video__wrapper .live__video__container {
   opacity: 1;
   transition: opacity ease 0.3s;
@@ -2967,7 +3117,7 @@ h3 {
   display: none;
 }
 .live__video__container.play .live__video__controller--btn--group .live__play__btn {
-  background-image: url(../../images/components/liveShoppingCard/icon-pause.png);
+  background-image: url(./../images/components/liveShoppingCard/icon-pause.png);
 }
 .live__video__wrapper {
   position: fixed;
@@ -2997,7 +3147,7 @@ h3 {
   display: block;
   width: 103px;
   height: 30px;
-  background: url(../../images/components/liveShoppingCard/logo-live.png) no-repeat;
+  background: url(./../images/components/liveShoppingCard/logo-live.png) no-repeat;
   background-size: contain;
   background-position: right top -2px;
   font-weight: bold;
@@ -3022,7 +3172,7 @@ h3 {
   top: 50px;
   width: 100%;
   padding-left: 50px;
-  background: url(../../images/components/liveShoppingCard/icon-badge.png) no-repeat;
+  background: url(./../images/components/liveShoppingCard/icon-badge.png) no-repeat;
   background-position: left 10px center;
   background-size: contain;
 }
@@ -3050,7 +3200,7 @@ h3 {
   display: inline-block;
   padding-left: 18px;
   margin-right: 8px;
-  background: url(../../images/components/liveShoppingCard/icon-person.png) no-repeat;
+  background: url(./../images/components/liveShoppingCard/icon-person.png) no-repeat;
   background-size: contain;
 }
 .live__video__viewer::after {
@@ -3083,7 +3233,7 @@ h3 {
   background: none;
   width: 30px;
   height: 30px;
-  background: url(../../images/components/liveShoppingCard/icon-muted.png) no-repeat;
+  background: url(./../images/components/liveShoppingCard/icon-muted.png) no-repeat;
   background-position: center;
   background-size: 70%;
 }
@@ -3094,17 +3244,17 @@ h3 {
   width: 140px;
   height: 140px;
   transform: translate(-50%, -50%);
-  background-image: url(../../images/components/liveShoppingCard/play240.png);
+  background-image: url(./../images/components/liveShoppingCard/play240.png);
   background-size: contain;
 }
 .live__video__top--btn--group li.muted button {
-  background-image: url(../../images/components/liveShoppingCard/icon-sound.png);
+  background-image: url(./../images/components/liveShoppingCard/icon-sound.png);
 }
 .live__video__top--btn--group li:nth-child(3) button {
-  background-image: url(../../images/components/liveShoppingCard/icon-sound.png);
+  background-image: url(./../images/components/liveShoppingCard/icon-sound.png);
 }
 .live__video__top--btn--group li:last-child button {
-  background-image: url(../../images/components/liveShoppingCard/icon-close.png);
+  background-image: url(./../images/components/liveShoppingCard/icon-close.png);
 }
 .live__video__bottom {
   position: absolute;
@@ -3173,7 +3323,7 @@ h3 {
   background: none;
   width: 50px;
   height: 40px;
-  background: url(../../images/components/liveShoppingCard/icon-coupon.png) no-repeat;
+  background: url(./../images/components/liveShoppingCard/icon-coupon.png) no-repeat;
   background-position: center;
 }
 .live__video__bottom--btn--group li:nth-child(1) button::after {
@@ -3191,11 +3341,11 @@ h3 {
   background: #ff4a4a;
 }
 .live__video__bottom--btn--group li:nth-child(2) button {
-  background-image: url(../../images/components/liveShoppingCard/icon-like.png);
+  background-image: url(./../images/components/liveShoppingCard/icon-like.png);
 }
 .live__video__bottom--btn--group li:nth-child(3) button {
   padding-top: 40px;
-  background-image: url(../../images/components/liveShoppingCard/icon-share.png);
+  background-image: url(./../images/components/liveShoppingCard/icon-share.png);
 }
 .live__video__bottom--btn--group li:nth-child(3) button span {
   font-size: 11px;
@@ -3216,7 +3366,7 @@ h3 {
   display: block;
   padding-right: 80px;
   padding-left: 10px;
-  background: url(../../images/components/liveShoppingCard/icon-pack.png) no-repeat;
+  background: url(./../images/components/liveShoppingCard/icon-pack.png) no-repeat;
   background-position: right 10px center;
 }
 .live__video__sales a::before {
@@ -3235,7 +3385,7 @@ h3 {
   background: #fff;
   border-radius: 5px;
   padding-left: 70px;
-  background: #fff url(../../images/components/liveShoppingCard/pizza-logo.png) no-repeat;
+  background: #fff url(./../images/components/liveShoppingCard/pizza-logo.png) no-repeat;
   background-size: contain;
 }
 .live__video__sales__product::after {
@@ -3318,15 +3468,15 @@ h3 {
   background: none;
   width: 30px;
   height: 30px;
-  background: url(../../images/components/liveShoppingCard/icon-play.png) no-repeat;
+  background: url(./../images/components/liveShoppingCard/icon-play.png) no-repeat;
   background-position: center;
 }
 .live__video__controller--btn--group li:first-child button {
-  background-image: url(../../images/components/liveShoppingCard/icon-arrow.png);
+  background-image: url(./../images/components/liveShoppingCard/icon-arrow.png);
   transform: rotate(180deg);
 }
 .live__video__controller--btn--group li:last-child button {
-  background-image: url(../../images/components/liveShoppingCard/icon-arrow.png);
+  background-image: url(./../images/components/liveShoppingCard/icon-arrow.png);
 }
 
 body {
@@ -3352,7 +3502,7 @@ body {
 }
 .store__header {
   padding-top: 24rem;
-  background: url(../../images/order-detail/dunkin.jpg) no-repeat;
+  background: url(./../images/order-detail/dunkin.jpg) no-repeat;
   background-size: cover;
   background-position: center top 40%;
 }
@@ -3541,7 +3691,7 @@ body {
   display: inline-block;
   height: 3.5rem;
   line-height: 3.5rem;
-  border-bottom: 5px solid #2ac1bc;
+  border-bottom: 5px solid rgb(42, 193, 188);
 }
 .store__order-info .header-package {
   left: 50%;
@@ -3802,7 +3952,7 @@ body {
 }
 .order__detail__desc {
   position: relative;
-  background: url(../../images/order-detail/dunkin.jpg) no-repeat;
+  background: url(./../images/order-detail/dunkin.jpg) no-repeat;
   background-size: cover;
   background-position: center top 40%;
   height: 300px;
@@ -3906,7 +4056,7 @@ body {
   width: 1.875rem;
   height: 1.875rem;
   border-radius: 0.625rem;
-  background-image: url(../../images/cart/image.png);
+  background-image: url(./../images/cart/image.png);
   border: 1px solid #858585;
   background-position: 0 0;
   background-size: contain;
@@ -4003,7 +4153,7 @@ body {
   display: inline-block;
   width: 1.25rem;
   height: 1.25rem;
-  background-image: url(../../images/cart/minus-512.webp);
+  background-image: url(./../images/cart/minus-512.webp);
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: contain;
@@ -4014,7 +4164,7 @@ body {
   display: inline-block;
   width: 1.25rem;
   height: 1.25rem;
-  background-image: url(../../images/cart/plus-black72.png);
+  background-image: url(./../images/cart/plus-black72.png);
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: contain;
@@ -4158,7 +4308,7 @@ body {
   width: 30%;
   margin-left: auto;
   margin-right: auto;
-  background: url("../../images/delivery-main/background_receipt.jpeg");
+  background: url("./../images/delivery-main/background_receipt.jpeg");
 }
 @media screen and (max-width: 1023px) {
   .receit__wrapper {
@@ -4188,7 +4338,7 @@ body {
   position: absolute;
   top: 0.625rem;
   right: 0.625rem;
-  background: url("../../images/cart/exit.png") no-repeat;
+  background: url("./../images/cart/exit.png") no-repeat;
   background-position: 50%;
 }
 .receit__wrapper .exit__home {
@@ -4198,7 +4348,7 @@ body {
   position: absolute;
   top: 0.625rem;
   right: 2.5rem;
-  background: url("../../images/cart/home.png") no-repeat;
+  background: url("./../images/cart/home.png") no-repeat;
   background-position: 50%;
 }
 

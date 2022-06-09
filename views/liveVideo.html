@@ -13,6 +13,10 @@
 <body class="live__video">
   <div class="live__video__wrapper loading">
     <div class="live__video__inner">
+      <div class="loading__container">
+        <div class="loading"></div>
+        <div id="loading-text">loading</div>
+    </div>
       <header class="live__video__header">
         <h1 class="live__video__logo">
           <a href="./liveShopping.html">
@@ -36,6 +40,7 @@
           </ul>
         </div>
         <video controlslist="nodownload">
+          <source src="../images/components/liveShoppingCard/ex01.webm" type="video/webm">
           <source src="../images/components/liveShoppingCard/ex01.mp4" type="video/mp4">
         </video>
         <div class="live__video__bottom">
@@ -50,7 +55,6 @@
             <a href="/" role="button" data-product-num="3개">
               <div class="live__video__sales__product">
                 <p>
-                  <!-- <img src="../images/components/liveShoppingCard/play240.png" alt=""> -->
                   <span>미스터 피자 20,000원 상품권</span>
                   <span><span>15%</span>15,000원</span>
                 </p>

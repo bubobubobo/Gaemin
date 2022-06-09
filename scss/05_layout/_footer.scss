@@ -46,13 +46,13 @@
     background-position: 0 3px;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url(../../images/components/footer/down42.png);
+    background-image: url(./../images/components/footer/down42.png);
   }
 }
 
 .company__toggle__up {
   &::after {
-    background-image: url(../../images/components/footer/up42.png);
+    background-image: url(./../images/components/footer/up42.png);
   }
 }
 

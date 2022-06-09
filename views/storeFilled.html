@@ -484,14 +484,16 @@
           </p>
         </div>
         <!-- 클래스 off추가되면 button disabled=true설정 필요 -->
-        <button type="submit">
-          <span class="total__count--group">
-            <span class="sr-only">총</span>
-            <span class="total__count">1</span>
-            <span class="sr-only">개</span>
-          </span>
-          <span><span class="display__off"><span class="total__price">16,000</span>원</span> 담기</span>
-        </button>
+        <form action="./cart.html">
+          <button type="submit">
+            <span class="total__count--group">
+              <span class="sr-only">총</span>
+              <span class="total__count">1</span>
+              <span class="sr-only">개</span>
+            </span>
+            <span><span class="display__off"><span class="total__price">16,000</span>원</span> 주문</span>
+          </button>
+         </form>
       </section>
     </div>
   </main>
@@ -551,14 +553,16 @@
   <div class="modal">
     <div class="modal__body">
       <section class="my__place">
-        <h2>주소 설정</h2>
-        <ul class="my__place__ul">
-          <li>우리 집</li>
-          <li>우리 회사</li>
-          <li><a href="/">주소 추가</a></li>
-        </ul>
+        <h2 tabindex="0">주소 설정</h2>
+              <ul class="my__place__ul">
+                <li tabindex="0">우리 집</li>
+                <li tabindex="0">우리 회사</li>
+                <li tabindex="0"><a href="/">주소 추가</a></li>
+              </ul>
       </section>
     </div>
 </body>
-
+<script>
+  document.addEventListener('DOMContentLoaded', () => document.querySelector('.total__count').innerHTML = localStorage.getItem('cart'));
+</script>
 </html>

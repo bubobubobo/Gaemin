@@ -18,15 +18,15 @@
         <div class="header__sub1">
           <h1 class="logo">
             <a href="../main.html">
-              <img src="../images/components/header/logo72.png" alt="배달의 민족 로고" />
-              <img src="../images/components/header/logo.svg" alt="배달의 민족" />
+              <img src="./images/components/header/logo72.png" alt="배달의 민족 로고" />
+              <img src="./images/components/header/logo.svg" alt="배달의 민족" />
             </a>
           </h1>
           <p class="header__location" role="button" tabindex="0">주소를 알려주세요!</p>
           <div class="login__container">
             <a href="/" class="header__login">로그인</a>
-            <a href=""><img src="../images/components/header/person32.png" alt="마이배민" /></a>
-            <a href="./cart.html" class="cart__img"><img src="../images/components/header/cart46.png" alt="장바구니" />
+            <a href=""><img src="./images/components/header/person32.png" alt="마이배민" /></a>
+            <a href="./cart.html" class="cart__img"><img src="./images/components/header/cart46.png" alt="장바구니" />
               <span class="total__count--group local__count__group">
                 <span class="sr-only">총</span>
                 <span class="local__count">1</span>
@@ -54,10 +54,10 @@
           <article>
             <div class="cart__order__detail__top">
               <span>올스타 도넛세트</span>
-              <img class="cart__btn__x" src="../images/cart/x96.png" alt="장바구니에서 제거" />
+              <img class="cart__btn__x" src="./images/cart/x96.png" alt="장바구니에서 제거" />
             </div>
             <div class="cart__order__detail__main">
-              <img src="../images/cart/iOS.jpg" alt="닭도리탕" />
+              <img src="./images/cart/iOS.jpg" alt="닭도리탕" />
               <ul>
                 <li>가격 : 올스타 도넛 세트 (15,000원)</li>
                 <li>메뉴선택 : 아메리카노</li>
@@ -70,7 +70,7 @@
             </div>
           </article>
           <a href="/" class="want__more__food">
-            <img src="../images/cart/plus-black72.png" alt="플러스" />
+            <img src="./images/cart/plus-black72.png" alt="플러스" />
             더 담으로 가기
           </a>
         </section>
@@ -119,12 +119,12 @@
   <div class="modal">
     <div class="modal__body">
       <section class="my__place">
-        <h2>주소 설정</h2>
-        <ul class="my__place__ul">
-          <li>우리 집</li>
-          <li>우리 회사</li>
-          <li><a href="/">주소 추가</a></li>
-        </ul>
+        <h2 tabindex="0">주소 설정</h2>
+              <ul class="my__place__ul">
+                <li tabindex="0">우리 집</li>
+                <li tabindex="0">우리 회사</li>
+                <li tabindex="0"><a href="/">주소 추가</a></li>
+              </ul>
       </section>
     </div>
   </div>
@@ -178,6 +178,8 @@
     </div>
   </div>
 </body>
-<script type="module" src="../js/index.js"></script>
 <script src="../js/receit.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => document.querySelector('.total__count').innerHTML = localStorage.getItem('cart'));
+</script>
 </html>

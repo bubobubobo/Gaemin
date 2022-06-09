@@ -6,11 +6,72 @@
     &.loading {
       .live__video__inner {
         background: $font-gray;
-
+        
         header, .live__video__container {
           opacity: 0;
         }
+        
+        .loading__container {
+          display: block;
+        }
       }
+    }
+
+    .loading__container {
+        display: none;
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        .loading {
+          border-radius: 100%;
+          border: 2px solid $white;
+          border-top-color: transparent;
+          border-bottom-color: transparent;
+          background: transparent;
+          -moz-animation: rotate-loading 1.5s linear 0s infinite normal;
+          -moz-transform-origin: 50% 50%;
+          -o-animation: rotate-loading 1.5s linear 0s infinite normal;
+          -o-transform-origin: 50% 50%;
+          -webkit-animation: rotate-loading 1.5s linear 0s infinite normal;
+          -webkit-transform-origin: 50% 50%;
+          animation: rotate-loading 1.5s linear 0s infinite normal;
+          transform-origin: 50% 50%;
+        }
+
+        &:hover .loading {
+            border-color: transparent #E45635 transparent #E45635;
+        }
+
+        &:hover .loading,
+        & .loading {
+            -webkit-transition: all 0.5s ease-in-out;
+            -moz-transition: all 0.5s ease-in-out;
+            -ms-transition: all 0.5s ease-in-out;
+            -o-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out;
+        }
+
+        #loading-text {
+            -moz-animation: loading-text-opacity 2s linear 0s infinite normal;
+            -o-animation: loading-text-opacity 2s linear 0s infinite normal;
+            -webkit-animation: loading-text-opacity 2s linear 0s infinite normal;
+            animation: loading-text-opacity 2s linear 0s infinite normal;
+            color: #ffffff;
+            font-family: "Helvetica Neue, "Helvetica", ""arial";
+            font-size: 10px;
+            font-weight: bold;
+            margin-top: 45px;
+            opacity: 0;
+            position: absolute;
+            text-align: center;
+            text-transform: uppercase;
+            top: 0;
+            width: 100px;
+        }
     }
 
     header, .live__video__container {
@@ -25,7 +86,7 @@
     }
 
     .live__video__controller--btn--group .live__play__btn {
-      background-image: url(../../images/components/liveShoppingCard/icon-pause.png);
+      background-image: url(./../images/components/liveShoppingCard/icon-pause.png);
     }
   }
 
@@ -62,7 +123,7 @@
       display: block;
       width: 103px;
       height: 30px;
-      background: url(../../images/components/liveShoppingCard/logo-live.png) no-repeat;
+      background: url(./../images/components/liveShoppingCard/logo-live.png) no-repeat;
       background-size: contain;
       background-position: right top -2px;
       @include fontSetup(bold, 16px, $white, 30px);
@@ -89,7 +150,7 @@
     top: 50px;
     width: 100%;
     padding-left: 50px;
-    background: url(../../images/components/liveShoppingCard/icon-badge.png) no-repeat;
+    background: url(./../images/components/liveShoppingCard/icon-badge.png) no-repeat;
     background-position: left 10px center;
     background-size: contain;
   }
@@ -111,7 +172,7 @@
     display: inline-block;
     padding-left: 18px;
     margin-right: 8px;
-    background: url(../../images/components/liveShoppingCard/icon-person.png) no-repeat;
+    background: url(./../images/components/liveShoppingCard/icon-person.png) no-repeat;
     background-size: contain;
 
     &::after {
@@ -140,7 +201,7 @@
       @include buttonNone;
       width: 30px;
       height: 30px;
-      background: url(../../images/components/liveShoppingCard/icon-muted.png) no-repeat;
+      background: url(./../images/components/liveShoppingCard/icon-muted.png) no-repeat;
       background-position: center;
       background-size: 70%;
     }
@@ -152,20 +213,20 @@
       width: 140px;
       height: 140px;
       transform: translate(-50%,-50%);
-      background-image: url(../../images/components/liveShoppingCard/play240.png);
+      background-image: url(./../images/components/liveShoppingCard/play240.png);
       background-size: contain;
     }
 
     & li.muted button {
-      background-image: url(../../images/components/liveShoppingCard/icon-sound.png);
+      background-image: url(./../images/components/liveShoppingCard/icon-sound.png);
     }
 
     & li:nth-child(3) button {
-      background-image: url(../../images/components/liveShoppingCard/icon-sound.png);
+      background-image: url(./../images/components/liveShoppingCard/icon-sound.png);
     }
 
     & li:last-child button {
-      background-image: url(../../images/components/liveShoppingCard/icon-close.png);
+      background-image: url(./../images/components/liveShoppingCard/icon-close.png);
     }
   }
 
@@ -229,7 +290,7 @@
         @include buttonNone;
         width: 50px;
         height: 40px;
-        background: url(../../images/components/liveShoppingCard/icon-coupon.png) no-repeat;
+        background: url(./../images/components/liveShoppingCard/icon-coupon.png) no-repeat;
         background-position: center;
       }
 
@@ -248,12 +309,12 @@
       }
 
       &:nth-child(2) button {
-        background-image: url(../../images/components/liveShoppingCard/icon-like.png);
+        background-image: url(./../images/components/liveShoppingCard/icon-like.png);
       }
 
       &:nth-child(3) button {
         padding-top: 40px;
-        background-image: url(../../images/components/liveShoppingCard/icon-share.png);
+        background-image: url(./../images/components/liveShoppingCard/icon-share.png);
 
         span {
           font-size: 11px;
@@ -276,7 +337,7 @@
       display: block;
       padding-right: 80px;
       padding-left: 10px;
-      background: url(../../images/components/liveShoppingCard/icon-pack.png) no-repeat;
+      background: url(./../images/components/liveShoppingCard/icon-pack.png) no-repeat;
       background-position: right 10px center;
 
       &::before {
@@ -294,7 +355,7 @@
       background: $white;
       border-radius: 5px;
       padding-left: 70px;
-      background: $white url(../../images/components/liveShoppingCard/pizza-logo.png) no-repeat;
+      background: $white url(./../images/components/liveShoppingCard/pizza-logo.png) no-repeat;
       background-size: contain;
 
       &::after {
@@ -373,17 +434,17 @@
           @include buttonNone;
           width: 30px;
           height: 30px;
-          background: url(../../images/components/liveShoppingCard/icon-play.png) no-repeat;
+          background: url(./../images/components/liveShoppingCard/icon-play.png) no-repeat;
           background-position: center;
         }
 
         &:first-child button{
-          background-image: url(../../images/components/liveShoppingCard/icon-arrow.png);
+          background-image: url(./../images/components/liveShoppingCard/icon-arrow.png);
           transform: rotate(180deg);
         }
 
         &:last-child button{
-          background-image: url(../../images/components/liveShoppingCard/icon-arrow.png);
+          background-image: url(./../images/components/liveShoppingCard/icon-arrow.png);
         }
       }
     }

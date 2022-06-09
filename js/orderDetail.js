@@ -7,7 +7,7 @@
   let totalCount = document.querySelector(".order__detail__total__num");
   let totalCount2 = document.querySelector(".total__count");
 
-  let num = 0;
+  let num = 1;
 
   // radion, checkbox on & off
   const changeInput = (e) => {

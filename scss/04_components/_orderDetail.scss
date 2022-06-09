@@ -43,12 +43,12 @@
   &__radio--group {
     & > li.on {
       label {
-        background-image: url(../../images/order-detail/icon-radio-checked.png);
+        background-image: url(./../images/order-detail/icon-radio-checked.png);
       }
     }
 
     label {
-      background: url(../../images/order-detail/icon-radio-unchecked.png) no-repeat;
+      background: url(./../images/order-detail/icon-radio-unchecked.png) no-repeat;
       background-size: contain;
     }
 
@@ -60,12 +60,12 @@
   &__chk--group {
     & > li.on {
       label {
-        background-image: url(../../images/order-detail/icon-chk-checked.png);
+        background-image: url(./../images/order-detail/icon-chk-checked.png);
       }
     }
 
     label {
-      background: url(../../images/order-detail/icon-chk-unchecked.png) no-repeat;
+      background: url(./../images/order-detail/icon-chk-unchecked.png) no-repeat;
       background-size: contain;
     }
 

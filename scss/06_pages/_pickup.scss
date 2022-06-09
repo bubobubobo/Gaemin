@@ -29,7 +29,7 @@
 		}
 	}
 	#tab3 {
-		background-image: url(./../../images/map/star.png);
+		background-image: url(./../images/map/star.png);
 		background-repeat: no-repeat;
 		background-size: 30%;
 		background-position: 5% 37%;
@@ -52,7 +52,7 @@
 		display: inline-block;
 		height: 20px;
 		width: 30px;
-		background-image: url(./../../images/map/EAL.png);
+		background-image: url(./../images/map/EAL.png);
 		background-size: contain;
 		background-repeat: no-repeat;
 	}
@@ -105,7 +105,7 @@
 			transform: translateX(rem(-430px));
 			p {
 				margin: 12px 24px;
-				background-image: url(./../../images/map/kRf.png);
+				background-image: url(./../images/map/kRf.png);
 				background-size: contain;
 				background-repeat: no-repeat;
 				color: $map-font;
@@ -218,7 +218,7 @@
 				height: rem(90px);
 				margin-top: -5px;
 				width: 80%;
-				border-radius: 5%;
+				border-radius: 10px;
 			}
 			.loading-button {
 				margin-left: 7px;
@@ -263,7 +263,7 @@
 				width: rem(30px);
 				height: rem(30px);
 				display: block;
-				background-image: url(./../../images/map/AsG.png);
+				background-image: url(./../images/map/AsG.png);
 				background-size: contain;
 			}
 		}
@@ -358,7 +358,7 @@
 						width: rem(60px);
 						height: rem(40px);
 						display: block;
-						background: url("../images/delivery-main/#{$glyph}") no-repeat;
+						background: url("./../images/delivery-main/#{$glyph}") no-repeat;
 						background-size: contain;
 						position: relative;
 						transform: translateX(15%);

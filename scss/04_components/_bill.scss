@@ -3,7 +3,7 @@
   &.off {
     & .empty {
       padding-top: 200px;
-      background: url(../../images/order-detail/icon-empty.png) no-repeat;
+      background: url(./../images/order-detail/icon-empty.png) no-repeat;
       background-position: center;
     }
 
@@ -31,7 +31,7 @@
     align-self: flex-start;
     border-radius: 5px;
     background: $white;
-    // background: $white url(../../images/delivery-main/background_receipt.jpeg);
+    // background: $white url(./../images/delivery-main/background_receipt.jpeg);
   }
 
   &__warning {
